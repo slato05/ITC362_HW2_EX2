@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
             updateQuestion()
         }
 
+        //use setOnClickListener to allow clicking the text to update question
         binding.questionTextView.setOnClickListener {
             currentIndex = (currentIndex + 1) % questionBank.size
             updateQuestion()
